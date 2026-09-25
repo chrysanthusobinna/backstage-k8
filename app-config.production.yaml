@@ -17,6 +17,7 @@ backend:
     connect-src: ["'self'", 'http:', 'https:']
     script-src: ["'self'", "'unsafe-eval'"]
     img-src: ["'self'", 'data:']
+    upgrade-insecure-requests: false
   cors:
     origin: ${BACKSTAGE_BASE_URL}
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
