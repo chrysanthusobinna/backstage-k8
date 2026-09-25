@@ -13,6 +13,15 @@ backend:
   # all interfaces, the most permissive setting. The right value depends on your specific deployment.
   listen: ':7007'
 
+  csp:
+    connect-src: ["'self'", 'http:', 'https:']
+    script-src: ["'self'", "'unsafe-eval'"]
+    img-src: ["'self'", 'data:']
+  cors:
+    origin: ${BACKSTAGE_BASE_URL}
+    methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
+    credentials: true
+
   # config options: https://node-postgres.com/apis/client
   database:
     client: better-sqlite3
