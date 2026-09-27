@@ -20,4 +20,4 @@ spec:
             - containerPort: 7007
           env:
             - name: BACKSTAGE_BASE_URL
-              value: "http://34.13.52.252"
+              value: "http://34.142.76.63"
