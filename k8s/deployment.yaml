@@ -21,3 +21,9 @@ spec:
           env:
             - name: BACKSTAGE_BASE_URL
               value: "http://34.142.76.63"
+            - name: GIHUB_OAUTH_CLIENT_ID
+              value: "unused-placeholder"
+            - name: GIHUB_OAUTH_CLIENT_SECRET
+              value: "unused-placeholder"
+            - name: GIHUB_OAUTH_LOGIN_BASE_URL
+              value: "http://34.142.76.63"
